@@ -7,7 +7,7 @@ def run(
     server_class=HTTPServer,
     handler_class=SimpleHTTPRequestHandler,
     port=8888,
-    directory=None,
+    directory=None, # forces the server to only display files that it should. default is set to None.
 ):
     if directory:  # Change the current working directory if directory is specified
         os.chdir(directory)
